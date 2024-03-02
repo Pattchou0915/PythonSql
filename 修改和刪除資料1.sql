@@ -13,8 +13,8 @@ INSERT INTO student VALUES(3, '小綠','歷史',70);
 INSERT INTO student VALUES(4, '小藍','英語',80);
 INSERT INTO student VALUES(5, '小黑','化學',20);
 
+SELECT * FROM student;
 
-DROP TABLE student;
 
 /*SELECT用法*/
 SELECT *
@@ -49,7 +49,7 @@ ORDER BY score ASC
 LIMIT 2;
 
 
-/*WHERE用法*/
+/*WHERE修改用法*/
 SELECT *
 FROM student
 WHERE major = '英語'
@@ -106,11 +106,14 @@ FROM student
 WHERE name LIKE '%黃%'
 
 
+/*WHERE刪除用法*/
+UPDATE student
+SET major='生物'
+WHERE student_id = 3
 
 
-
-
-
+DELETE FROM student
+WHERE name='小白' AND major='英語'
 
 
 
