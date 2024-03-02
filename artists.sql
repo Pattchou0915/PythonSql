@@ -1,9 +1,14 @@
 CREATE TABLE IF NOT EXISTS student(
 	student_id SERIAL PRIMARY KEY,
-	name VARCHAR(20),
-	major VARCHAR(20) 
+	name VARCHAR(200),
+	major VARCHAR(200) 
 );
 
+
+DROP TABLE student;
+
+SELECT *
+FROM student;
 
 CREATE TABLE IF NOT EXISTS artists(
 	id SERIAL PRIMARY KEY,
@@ -12,5 +17,16 @@ CREATE TABLE IF NOT EXISTS artists(
 );
 
 
+CREATE TABLE IF NOT EXISTS city(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(30),
+	population INT
+);
+
+
+
+
 SELECT *
 FROM artists;
+
+
