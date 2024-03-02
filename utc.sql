@@ -3,3 +3,9 @@ SELECT now() AS 現在時間utc
 CREATE DATABASE test;
 
 DROP DATABASE test;
+
+CREATE TABLE IF NOT EXISTS student(
+	student_id SERIAL PRIMARY KEY,
+	name VARCHAR(20),
+	major VARCHAR(20) 
+);
