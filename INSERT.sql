@@ -29,5 +29,5 @@ RETURNING *;
 
 /*新增多筆*/
 INSERT INTO student(name,major) 
-VALUES ('小白','國文'),('小藍','英文')
+VALUES ('小白5','國文2'),('小藍報','英文3')
 RETURNING *;
