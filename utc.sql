@@ -1,1 +1,5 @@
 SELECT now() AS 現在時間utc
+
+CREATE DATABASE test;
+
+DROP DATABASE test;
