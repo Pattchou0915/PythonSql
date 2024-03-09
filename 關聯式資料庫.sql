@@ -1,14 +1,13 @@
-DROP TABLE IF EXISTS 客戶
-
+/*建立客戶資料表*/
 	CREATE TABLE IF NOT EXISTS 客戶(
 	客戶_id SERIAL,
 	客戶名稱 VARCHAR(255) NOT NULL,
 	PRIMARY KEY(客戶_id)
 
 );
+DROP TABLE IF EXISTS 客戶
 
-DROP TABLE IF EXISTS 聯絡人
-	
+/*建立聯絡人資訊*/	
 CREATE TABLE IF NOT EXISTS 聯絡人(
 	聯絡人id SERIAL,
 	客戶id INT,
@@ -19,8 +18,9 @@ CREATE TABLE IF NOT EXISTS 聯絡人(
 	FOREIGN KEY(客戶id) REFERENCES 客戶(客戶_id)
 	
 );
+DROP TABLE IF EXISTS 聯絡人
 
-
+/*INSERT*/		
 INSERT INTO 客戶(客戶名稱)
 VALUES ('遠傳電信'),
 	   ('台灣大車隊')
@@ -33,3 +33,5 @@ VALUES (1,'John Doe','(408)-111-1234','john.doe@bluebird.dev'),
 DELETE FROM 客戶
 WHERE 客戶_id = 1
 
+SELECT * FROM 客戶;
+SELECT * FROM 聯絡人;
