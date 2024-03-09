@@ -34,7 +34,7 @@ FROM basket_a INNER JOIN basket_b ON fruit_a = fruit_b
 SELECT a,fruit_a,b,fruit_b
 FROM basket_a LEFT JOIN basket_b ON fruit_a = fruit_b
 
-/*left join*/
+/*left join用法*/
 SELECT a,fruit_a,b,fruit_b
 FROM basket_a LEFT JOIN basket_b ON fruit_a = fruit_b
 WHERE b IS NULL
@@ -43,7 +43,7 @@ WHERE b IS NULL
 SELECT a,fruit_a,b,fruit_b
 FROM basket_a RIGHT JOIN basket_b ON fruit_a = fruit_b
 
-/*right join*/
+/*right join用法*/
 SELECT a,fruit_a,b,fruit_b
 FROM basket_a RIGHT JOIN basket_b ON fruit_a = fruit_b
 WHERE a IS NULL
@@ -54,7 +54,7 @@ SELECT a,fruit_a,b,fruit_b
 FROM basket_a FULL OUTER JOIN basket_b ON fruit_a = fruit_b
 
 
-/*full outer join*/
+/*full outer join用法*/
 SELECT a,fruit_a,b,fruit_b
 FROM basket_a FULL OUTER JOIN basket_b ON fruit_a = fruit_b
 WHERE a IS NULL OR b IS NULL
