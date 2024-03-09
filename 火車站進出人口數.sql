@@ -15,3 +15,4 @@ CREATE TABLE IF NOT EXISTS stations(
 SELECT * FROM stations;
 
 SELECT COUNT(*) AS 筆數
+FROM stations;
