@@ -41,7 +41,7 @@ SELECT DATE_TRUNC('year',日期) AS 年份,名稱,SUM(進站人數) AS 進站人
 FROM gate_count LEFT JOIN stations ON 站點編號 = 編號
 WHERE 名稱 = '基隆' OR 名稱 = '臺北'  AND 日期 BETWEEN '2020-01-01' AND '2022-12-31'
 GROUP BY 年份,名稱
-ORDER BY 名稱;
+ORDER BY 名稱 DESC;
 
 
 
